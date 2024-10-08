@@ -53,6 +53,9 @@ a {
 
 .content {
   display: flex;
+  justify-content: start;
+  gap: 30px;
+  max-width: 1144px;
 }
 
 .result {
@@ -100,7 +103,7 @@ a {
 .content__details {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
+  width: 399px;
 }
 
 .content__list-item {
