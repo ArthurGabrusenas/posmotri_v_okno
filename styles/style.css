@@ -16,6 +16,9 @@ html {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -53,25 +56,30 @@ a {
 
 .content {
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
   max-width: 1144px;
 }
 
 .result {
   width: 711px;
-  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .result__video-container {
   position: relative;
   width: 711px;
-  height: 386px;
+  margin-top: 73px;
 }
 
 .result__video {
   width: 100%;
-  height: 100%;
+  max-height: 386px;
   object-fit: cover;
   object-position: center;
 }
@@ -84,7 +92,7 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  margin-top: 20px;
+  width: 100%;
 }
 
 .search-form__fieldset:nth-of-type(2) {
@@ -95,9 +103,9 @@ a {
   position: relative;
   width: 100%;
   max-height: 298px;
-  margin-top: 11px;
   padding-left: 3px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .content__details {
@@ -146,8 +154,7 @@ a {
 }
 
 .title {
-  margin-top: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
@@ -214,7 +221,6 @@ fieldset {
 
 .search-form__fieldset-title {
   margin-bottom: 3px;
-  margin-left: 2px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -224,6 +230,7 @@ fieldset {
 
 .more-button {
   width: 100%;
+  padding: 4px;
 }
 
 .search-form__textfield {
